@@ -17,7 +17,7 @@ pipeline {
                         git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
                         sh 'npm install'
                         sh 'npm update'
-                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
+                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel --browser chrome'
                     }
                 }
 
@@ -29,7 +29,7 @@ pipeline {
                         git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
                         sh 'npm install'
                         sh 'npm update'
-                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
+                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel --browser chrome'
                     }
                 }
 
@@ -41,7 +41,7 @@ pipeline {
                         git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
                         sh 'npm install'
                         sh 'npm update'
-                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
+                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel --browser chrome'
                     }
                 }
 
