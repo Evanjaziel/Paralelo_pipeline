@@ -14,17 +14,10 @@ pipeline {
                         label "Agent1_1"
                     }
                     steps {
-                        script {
-                            // Configuración del PATH
-                            env.PATH = "${tool 'nodejs'}/bin:${env.PATH}"
-                            // Clonar el repositorio
-                            git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
-                            // Instalar y actualizar dependencias
-                            sh 'npm install'
-                            sh 'npm update'
-                            // Ejecutar pruebas de Cypress
-                            sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
-                        }
+                        git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
+                        sh 'npm install'
+                        sh 'npm update'
+                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
                     }
                 }
 
@@ -33,17 +26,10 @@ pipeline {
                         label "Agent1_2"
                     }
                     steps {
-                        script {
-                            // Configuración del PATH
-                            env.PATH = "${tool 'nodejs'}/bin:${env.PATH}"
-                            // Clonar el repositorio
-                            git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
-                            // Instalar y actualizar dependencias
-                            sh 'npm install'
-                            sh 'npm update'
-                            // Ejecutar pruebas de Cypress
-                            sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
-                        }
+                        git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
+                        sh 'npm install'
+                        sh 'npm update'
+                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
                     }
                 }
 
@@ -52,17 +38,10 @@ pipeline {
                         label "Agent1_3"
                     }
                     steps {
-                        script {
-                            // Configuración del PATH
-                            env.PATH = "${tool 'nodejs'}/bin:${env.PATH}"
-                            // Clonar el repositorio
-                            git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
-                            // Instalar y actualizar dependencias
-                            sh 'npm install'
-                            sh 'npm update'
-                            // Ejecutar pruebas de Cypress
-                            sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
-                        }
+                        git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
+                        sh 'npm install'
+                        sh 'npm update'
+                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
                     }
                 }
 
@@ -71,22 +50,13 @@ pipeline {
                         label "Agent1_4"
                     }
                     steps {
-                        script {
-                            // Configuración del PATH
-                            env.PATH = "${tool 'nodejs'}/bin:${env.PATH}"
-                            // Clonar el repositorio
-                            git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
-                            // Instalar y actualizar dependencias
-                            sh 'npm install'
-                            sh 'npm update'
-                            // Ejecutar pruebas de Cypress
-                            sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
-                        }
+                        git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
+                        sh 'npm install'
+                        sh 'npm update'
+                        sh 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
                     }
                 }
             }
         }
     }
 }
-
-
