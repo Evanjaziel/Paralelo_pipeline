@@ -1,7 +1,9 @@
 pipeline {
     agent any
 
-    tools {nodejs "node"}
+    tools {
+        nodejs "node" // Asegúrate de que el nombre "node" coincida con la configuración de Jenkins
+    }
 
     stages {
 
@@ -14,9 +16,8 @@ pipeline {
                     steps {
                         git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
                         bat 'npm install'
-                        bat 'npm update'                       
-                        bat 'npx cypress run cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824  --parallel'
-                    
+                        bat 'npm update'
+                        bat 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
                     }
                 }
 
@@ -27,9 +28,8 @@ pipeline {
                     steps {
                         git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
                         bat 'npm install'
-                        bat 'npm update'                       
-                        bat 'npx cypress run cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824  --parallel'
-                    
+                        bat 'npm update'
+                        bat 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
                     }
                 }
 
@@ -40,9 +40,8 @@ pipeline {
                     steps {
                         git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
                         bat 'npm install'
-                        bat 'npm update'                       
-                        bat 'npx cypress run cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824  --parallel'
-                    
+                        bat 'npm update'
+                        bat 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
                     }
                 }
 
@@ -53,22 +52,11 @@ pipeline {
                     steps {
                         git url: 'https://github.com/Evanjaziel/Paralelo_pipeline.git'
                         bat 'npm install'
-                        bat 'npm update'                       
-                        bat 'npx cypress run cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824  --parallel'
-                    
+                        bat 'npm update'
+                        bat 'npx cypress run --record --key 2358bc59-de48-4f96-b6a7-be308d3cd824 --parallel'
                     }
                 }
-
-               
-
-                
-   
-                  
             }
-
-             
         }
-
     }
-            
 }
